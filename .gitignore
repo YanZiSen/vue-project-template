@@ -1,0 +1,5 @@
+/base
+## 忽略 任意路径中包含.idea 文件夹路径
+**/.idea
+**/node_modules
+/font-end/dist
