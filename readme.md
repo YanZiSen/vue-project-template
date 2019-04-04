@@ -7,6 +7,7 @@
   npm run build 生产环境
 
 ## 开发规范在这写
+  首先浏览页面，先写公共样式，公共组件划分
   常量名大写
   ui class 带下划线
   不要再Vue.prototype上扩展，应该import或者 extends Vue

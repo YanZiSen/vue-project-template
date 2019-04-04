@@ -5,9 +5,9 @@
 </template>
 
 <script>
-  export default {
-    name: "UiButton"
-  }
+export default {
+  name: 'UiButton'
+}
 </script>
 
 <style scoped lang="stylus">

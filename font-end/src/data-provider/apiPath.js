@@ -6,7 +6,7 @@ const APIS = {
 }
 export const APIALL = new Proxy(APIS, {
   get (target, key) {
-    if (key  in target) {
+    if (key in target) {
       return projectPre + target[key]
     } else {
       return undefined

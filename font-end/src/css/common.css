@@ -1,6 +1,24 @@
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 body {
   font-family: '微软雅黑', 'sans-serif';
+  font-size: 14px;
+}
+h1, h2 {
+  font-weight: normal;
+}
+ul,li {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: #42b983;
+  text-decoration: none;
+}
+.mark-box {
+  line-height: 40px;
 }
