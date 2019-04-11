@@ -1,4 +1,4 @@
-const ip = 'http://192.168.10.184:3000'
+const ip = 'http://localhost:3000'
 module.exports = {
   proxy: {
     '/api/**' : {

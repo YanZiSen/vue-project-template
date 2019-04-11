@@ -11,5 +11,8 @@ export default {
   },
   registerUser (params) {
     return axios.post(APIALL.CREATE_USER, params)
+  },
+  getUserRouter (params) {
+    return axios.get(APIALL.GET_ROUTERS, {params: params})
   }
 }

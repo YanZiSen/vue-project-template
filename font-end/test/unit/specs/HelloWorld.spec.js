@@ -3,8 +3,8 @@
  */
 
 import Vue from 'vue'
-import HelloWorld from '@/components/HelloWorld.vue'
-import {sum} from '@/components/test'
+import HelloWorld from '@/views/HelloWorld.vue'
+import {sum} from '@/views/test'
 
 test('1 add 2', () => {
   expect(sum(1, 2)).toBe(3)

@@ -9,6 +9,13 @@ import 'element-ui/lib/theme-chalk/index.css'
 import './css/common.css'
 Vue.config.productionTip = false
 Vue.use(element)
+Vue.directive('has', {
+  inserted (el, binding) {
+    if (!Vue.prototype.$_has(binding.value)) {
+      el.parentNode.removeChild(el)
+    }
+  }
+})
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

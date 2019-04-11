@@ -11,9 +11,7 @@
 </template>
 
 <script>
-import UiButton from '@/common-components/ui-button'
 import dataProvider from '@/data-provider'
-import { mapMutations } from 'vuex'
 export default {
   name: 'login',
   data () {
@@ -24,20 +22,14 @@ export default {
       }
     }
   },
-  components: {UiButton},
   methods: {
-    ...mapMutations('router', ['setRouters']),
     submit () {
       dataProvider.registerUser({
         username: this.username,
         userpwd: this.userpwd
       }).then(res => {
         if (res.code === 200) {
-          this.$router.push({
-            name: 'index'
-          })
-          console.log('res.data', res.data, this.$store)
-          this.setRouters(res.data)
+          this.$emit('loginin')
         }
       }).catch(e => {
 
@@ -50,6 +42,6 @@ export default {
 <style scoped lang="stylus">
   .login-box
     margin 0 auto
-    margin-top 30px
+    padding-top 30px
     width 800px
 </style>

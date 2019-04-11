@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-const login = () => import('@/components/login')
-const index = () => import('@/components/index')
+const login = () => import('@/views/login')
 
 Vue.use(Router)
 
@@ -10,22 +9,9 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
-      redirect: '/index'
-    },
-    {
       path: '/login',
       name: 'login',
       component: login
-    },
-    {
-      path: '/index',
-      name: 'index',
-      component: index
-    },
-    {
-      path: '*',
-      redirect: '/index'
     }
   ]
 })
